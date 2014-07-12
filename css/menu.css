@@ -1,0 +1,67 @@
+.menu {
+    height: 31px;
+    background: rgb(53, 53, 57);
+    border-style: outset;
+    border-width: 8px;
+    border-color: rgb(241, 35, 68);
+}
+.menu li {
+    position: relative;
+    list-style: none;
+    float: left;
+    display: block;
+    height: 75px;
+}
+.menu li a {
+    display: block;
+    margin: 3px 0;
+    width: 190px;
+    line-height: 18px;
+    text-decoration: none;
+    text-align: center;
+    font-family: Verdana, Geneva, Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    text-shadow: 3px 3px 3px rgb(0,0,0);
+}
+.menu li:first-child a { border-left: none; }
+.menu li:last-child a{ border-right: none; }
+.menu li:hover > a { color: rgb(241, 35, 68); }
+/* Sub Menu */
+.menu ul {
+    position: absolute;
+    top: 31px;
+    left: 0;
+    vertical-align: middle;
+    background: rgb(31, 32, 36);
+    border-radius: 0 0 5px 5px;
+}
+.menu li:hover > ul {
+    opacity: 0.95;
+    z-index: 1;
+}
+.menu ul li {
+    height: 0;
+    overflow: hidden;
+    padding: 0;
+
+}
+.menu li:hover > ul li {
+    height: auto;
+    overflow: visible;
+    padding: 0;
+}
+
+.menu ul li a {
+    padding: 1px 5px;
+    border: none;
+    border-bottom: 2px solid rgb(53, 53, 57);
+}
+.menu ul li:last-child a { border: none; }
+
+
+
+
+
+
